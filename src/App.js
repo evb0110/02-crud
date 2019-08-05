@@ -62,6 +62,7 @@ class App extends Component {
             value={this.state.value}
           />
           <button>Submit</button>
+          <button className="refresh" type="button" onClick={this.getNotes}>Refresh notes from the server</button>
         </form>
         <div className="App">
           <Notes delNote={this.delNote} notes={this.state.notes} />
